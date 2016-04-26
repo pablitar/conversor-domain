@@ -1,6 +1,7 @@
 package ar.pablitar.conversor
 
 import org.eclipse.xtext.xbase.lib.Functions.Function1
+import org.eclipse.xtend.lib.annotations.Accessors
 
 class Conversor {
 	
@@ -9,6 +10,7 @@ class Conversor {
 		this.conversion = conversion
 	}
 	
+	@Accessors
 	String nombre
 	Function1<Double, Double> conversion
 	
